@@ -95,7 +95,7 @@ table th {
   border: 1px solid #638ef3;
   height: 50px;
 }
- 
+
 .blue-table thead tr:nth-child(odd){
   color: #ffffff;
   background: #85b2de;
@@ -121,4 +121,33 @@ table th {
 
 .blue-table tbody th {
   text-align: left;
+}
+
+/* Color Table Headers */
+.animal-chart thead th {
+  color: #ffffff;
+  background:#b55eab;
+}
+
+.animal-chart th {
+  border: 1px solid #dcdbdb;
+  height: 50px;
+}
+
+.animal-chart td {
+  border: 1px solid #dcdbdb;
+  height: 100px;
+  white-space: normal; /* 기본적으로 줄바꿈을 허용 */
+}
+
+.animal-chart tbody tr th > img {
+  height: 200px;
+}
+
+.animal-chart tbody tr td:last-child {
+  text-align: left;
+}
+
+.animal-chart tbody td:nth-child(2) {
+  font-weight: bold;
 }
