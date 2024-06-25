@@ -1,0 +1,98 @@
+/* Universal Style Rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Table Styles */
+.table-wrapper {
+  margin: 10px 70px 70px;
+}
+
+table {
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  /* change collapse to seperate for round shape */
+  border-collapse: separate;
+  border-spacing: 0; /* Ensure no gaps between cells when use separate option */
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.rounded-table {
+  border-radius: 12px; /* round shape */
+  overflow: hidden;
+  background-color: white;
+}
+
+caption {
+  caption-side: bottom;
+  margin: 14px 0px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+table td,
+table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.rounded-table td,
+.rounded-table th {
+  border: 1px solid #dcdbdb;
+}
+
+
+/* Color Table Headers */
+.rounded-table thead th {
+  color: #ffffff;
+  background: #365acf;
+}
+
+/* 첫 번째 행의 왼쪽 상단 및 오른쪽 상단 모서리 둥글게 */
+.rounded-table thead th:first-child {
+  border-top-left-radius: 12px; /* Match with table's border-radius */
+}
+
+.rounded-table thead th:last-child {
+  border-top-right-radius: 12px; /* Match with table's border-radius */
+}
+
+/* 마지막 행의 왼쪽 하단 및 오른쪽 하단 모서리 둥글게 */
+.rounded-table tbody tr:last-child th:first-child {
+  border-bottom-left-radius: 12px; /* Match with table's border-radius */
+}
+
+.rounded-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px; /* Match with table's border-radius */
+}
+
+/*  
+table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+  
+Color Even Rows
+table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+*/
