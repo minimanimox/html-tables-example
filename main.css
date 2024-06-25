@@ -66,7 +66,6 @@ table th {
   height: 50px;
 }
 
-
 /* Color Table Headers */
 .rounded-table thead th {
   color: #ffffff;
@@ -91,14 +90,35 @@ table th {
   border-bottom-right-radius: 12px; /* Match with table's border-radius */
 }
 
-/*  
-table thead th:nth-child(odd) {
+.blue-table td,
+.blue-table th {
+  border: 1px solid #638ef3;
+  height: 50px;
+}
+ 
+.blue-table thead tr:nth-child(odd){
   color: #ffffff;
-  background: #324960;
+  background: #85b2de;
 }
   
-Color Even Rows
-table tr:nth-child(even) {
-  background: #f8f8f8;
+.blue-table tbody tr:nth-child(odd) {
+  background: #b1cbe4;
 }
-*/
+
+.blue-table tbody tr:nth-child(even) {
+  background: #85b2de;
+}
+
+/* 첫 번째 행의 왼쪽 상단 및 오른쪽 상단 모서리 둥글게 */
+.blue-table thead th:first-child {
+  background: white;
+  border: white;
+}
+
+.blue-table thead th {
+  color: black;
+}
+
+.blue-table tbody th {
+  text-align: left;
+}
